@@ -2,8 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'todo-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  template: `
+  <h1>
+    {{ title }} app
+  </h1>
+
+  <todo-list-manager></todo-list-manager>
+  `,
 })
 export class AppComponent {
   title = 'todo';
